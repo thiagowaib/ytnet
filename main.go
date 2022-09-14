@@ -59,11 +59,9 @@ func Download(url string, format string) (result int) {
 }
 
 func main() {
-	fmt.Print("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-	fmt.Print("\nProject Repo at github.com/thiagowaib/go-yt-downloader")
-	fmt.Print("\nDownloader Plugin by kkdai at github.com/kkdai/youtube")
-	fmt.Print("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-	fmt.Print("\n~~         YTGO - The Go Youtube Downloader          ~~\n\n")
+	fmt.Print("\nProject at https://github.com/thiagowaib/ytgo\n")
+	fmt.Print("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+	fmt.Print("\n~~    YTGO - The Go Youtube Downloader     ~~\n\n")
 	for i := 0; true; i++ {
 
 		if i > 0 {
