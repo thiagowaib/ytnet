@@ -13,3 +13,8 @@ After the **ytgo.exe** file is downloaded, all you have to do is run it, and a c
 <blockquote>The downloaded files will be saved to the directory <b>ytgo.exe</b> file is.</blockquote>
 
 `* This is a Windows 86x only build *`
+
+<br>
+
+## 🤝  Contributions
+* Made with help of **[kkdai´s youtube plugin](http://github.com/kkdai/youtube "kkdai´s youtube plugin")**
