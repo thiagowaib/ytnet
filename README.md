@@ -1,5 +1,5 @@
 # 📡 YtGo ツ
-<img src="https://miro.medium.com/max/881/1*60-9wv8FneLpbu6RxLCdhA.jpeg" alt="Golang Banner" height="30%">
+<img src="https://miro.medium.com/max/881/1*60-9wv8FneLpbu6RxLCdhA.jpeg" alt="Golang Banner" height="20%">
 
 <blockquote>YtGo is a Windows aplication developed in the Go Programming Language that enables you to download youtube videos locally</blockquote>
 
