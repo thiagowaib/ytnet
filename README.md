@@ -1,5 +1,5 @@
 # 📡 YtGo ツ
-<img src="https://miro.medium.com/max/881/1*60-9wv8FneLpbu6RxLCdhA.jpeg" alt="Golang Banner">
+<img src="https://miro.medium.com/max/881/1*60-9wv8FneLpbu6RxLCdhA.jpeg" alt="Golang Banner" height="200px">
 
 <blockquote>YtGo is a Windows aplication developed in the Go Programming Language that enables you to download youtube videos locally </blockquote>
 
@@ -10,6 +10,6 @@ You can download the Windows executable YtGo file from this **[Google Drive Repo
 
 After the **ytgo.exe** file is downloaded, all you have to do is run it, and a console window should appear, ready to download any inputed youtube URLs.
 
-<blockquote>The downloaded files will be saved to the directory **ytgo.exe** file is.</blockquote>
+<blockquote>The downloaded files will be saved to the directory <b>ytgo.exe</b> file is.</blockquote>
 
 `* This is a Windows 86x only build *`
