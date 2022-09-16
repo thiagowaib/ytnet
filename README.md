@@ -1,20 +1,20 @@
-# 📡 YtGo ツ
-<img src="https://miro.medium.com/max/881/1*60-9wv8FneLpbu6RxLCdhA.jpeg" alt="Golang Banner" width="600px">
+# 📡 YtNet ツ
+<img src="https://www.communicationcrafts.com/wp-content/uploads/2021/12/CC-Blog-Significance-of-Dot-net-Core_main-banner.jpg" alt="DotNet Banner">
 
-<blockquote>YtGo is a Windows aplication developed in the Go Programming Language that enables you to download youtube videos locally</blockquote>
+<blockquote>YtNet is a Windows aplication that enables you to download youtube videos locally</blockquote>
 
 <br>
 
-## 🧶 Downloading and Using YtGo
-You can download the Windows executable YtGo file from this **[Google Drive Repository](https://drive.google.com/file/d/1UfglHclG5ORWKIgLp4frexwr5n_skKyj/view?usp=sharing "Google Drive Repository")**
+## 🧶 Downloading and Using YtNet
+You can download the Windows installer for YtNet file from this **[Google Drive Repository](https://drive.google.com/file/d/1zw9-uIeyE0sUutN6xfCg2QxzbsqNLRxY/view?usp=sharing "Google Drive Repository")**
 
-After the **ytgo.exe** file is downloaded, all you have to do is run it, and a console window should appear, ready to download any inputed youtube URLs.
+After the **YtNet_Setup.exe** file is downloaded, all you have to do is run it to install the YtNet application. After installed, you can open the **YtNet** application easily via its start menu shortcut.
 
-<blockquote>The downloaded files will be saved to the directory <b>ytgo.exe</b> file is.</blockquote>
+<blockquote>The downloaded files will be saved to the default Downloads directory</blockquote>
 
 `* This is a Windows 86x only build *`
 
 <br>
 
 ## 🤝  Contributions
-* Made with help of **[kkdai´s youtube plugin](http://github.com/kkdai/youtube "kkdai´s youtube plugin")**
+* Made with help of **[omansak´s .NET library](https://github.com/omansak/libvideo "omansak´s .NET library")**
