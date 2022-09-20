@@ -29,16 +29,39 @@ namespace ytNet
                     Console.Write(">> ");
                     string? format = Console.ReadLine();
 
-                    if(format != null && format == "2") {
-                        DownloadVideo(url, ".mp3");
-                    } else {
-                        DownloadVideo(url, ".mp4");
+                    try{
+                        if(format != null && format == "2") {
+                            DownloadVideo(url, ".mp3");
+                        } else {
+                            DownloadVideo(url, ".mp4");
+                        }
+                    }catch(Exception ex) when (ex is System.IO.DirectoryNotFoundException){
+                        Console.WriteLine();
+                        Console.WriteLine("!! Could Not found default Download folder !!");
+                        Console.WriteLine();
+                        Console.WriteLine("Enter the folder's path manually: ");
+                        Console.Write(">> ");
+                        string? path = Console.ReadLine();
+                        try{
+                            if(path != null &&format != null && format == "2") {
+                                DownloadVideo(url, ".mp3", path);
+                            } else if(path != null) {
+                                DownloadVideo(url, ".mp4", path);
+                            }
+                        }catch(Exception){
+                            Console.WriteLine();
+                            Console.WriteLine("**          Oops, something went wrong...           **");
+                            Console.WriteLine("** please, check the path you entered and try again **");
+                            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                            Console.WriteLine();
+                        }
                     }
+                    
                 } else {
                     Console.WriteLine();
-                    Console.WriteLine("**          Oops, something went wrong...          **");
-                    Console.WriteLine("** please check your video's URL and try again ^-^ **");
-                    Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                    Console.WriteLine("**          Oops, something went wrong...           **");
+                    Console.WriteLine("** please, check your video's URL and try again ^-^ **");
+                    Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                     Console.WriteLine();
                 }
             }
@@ -71,6 +94,34 @@ namespace ytNet
             string randKey = new Random().Next(1, 200).ToString();
             string fileName = video.FullName.Split(" ")[0] + "_" + randKey + format;
             string filePath = Path.Combine(GetDefaultFolder(), fileName);
+
+            Console.WriteLine("Downloading video at "+filePath);
+            File.WriteAllBytes(filePath, video.GetBytes());
+            Console.WriteLine("Download Complete!");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine();
+        }
+
+        static void DownloadVideo(string url, string format, string customPath)
+        {
+            // Starting point for YouTube Actions
+            var youtube = YouTube.Default;
+
+            // Gets a Video Object with Info about the video
+            var video = youtube.GetVideo(url);
+
+            // Download Information
+            Console.WriteLine();
+            Console.WriteLine("~Title: " + video.FullName);
+            Console.WriteLine("~Author: " + video.Info.Author);
+            Console.WriteLine("~Duration: " + video.Info.LengthSeconds/60 +":" + video.Info.LengthSeconds%60);
+            Console.WriteLine("~Format: " + format);
+            Console.WriteLine();
+
+            // Configures downloadPath and downloads video
+            string randKey = new Random().Next(1, 200).ToString();
+            string fileName = video.FullName.Split(" ")[0] + "_" + randKey + format;
+            string filePath = Path.Combine(customPath, fileName);
 
             Console.WriteLine("Downloading video at "+filePath);
             File.WriteAllBytes(filePath, video.GetBytes());
