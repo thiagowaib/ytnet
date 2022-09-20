@@ -20,3 +20,6 @@
 
 # .vscode Config
 .vscode/
+
+# release folder
+Release/
