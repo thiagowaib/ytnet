@@ -1,59 +1,8 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "AdvancedStringBuilder/0.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/AdvancedStringBuilder.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/AdvancedStringBuilder.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "JavaScriptEngineSwitcher.Core/3.19.0": {
-        "type": "package",
-        "dependencies": {
-          "AdvancedStringBuilder": "0.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/JavaScriptEngineSwitcher.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/JavaScriptEngineSwitcher.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "resource": {
-          "lib/netstandard2.0/ru-RU/JavaScriptEngineSwitcher.Core.resources.dll": {
-            "locale": "ru-RU"
-          }
-        }
-      },
-      "JavaScriptEngineSwitcher.Jurassic/3.19.0": {
-        "type": "package",
-        "dependencies": {
-          "JavaScriptEngineSwitcher.Core": "3.19.0",
-          "Jurassic.Unofficial": "2022.4.30"
-        },
-        "compile": {
-          "lib/netstandard2.0/JavaScriptEngineSwitcher.Jurassic.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/JavaScriptEngineSwitcher.Jurassic.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Jurassic.Unofficial/2022.4.30": {
+    "net6.0-windows7.0": {
+      "Jurassic/3.2.6": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -214,74 +163,22 @@
           }
         }
       },
-      "VideoLibrary/3.2.1": {
+      "VideoLibrary/3.2.2": {
         "type": "package",
         "dependencies": {
-          "JavaScriptEngineSwitcher.Core": "3.19.0",
-          "JavaScriptEngineSwitcher.Jurassic": "3.19.0",
+          "Jurassic": "3.2.6",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
-          "lib/netstandard2.1/libvideo.dll": {}
+          "lib/netstandard2.0/libvideo.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/libvideo.dll": {}
+          "lib/netstandard2.0/libvideo.dll": {}
         }
       }
     },
-    "net6.0/win10-x86": {
-      "AdvancedStringBuilder/0.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/AdvancedStringBuilder.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/AdvancedStringBuilder.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "JavaScriptEngineSwitcher.Core/3.19.0": {
-        "type": "package",
-        "dependencies": {
-          "AdvancedStringBuilder": "0.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/JavaScriptEngineSwitcher.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/JavaScriptEngineSwitcher.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "resource": {
-          "lib/netstandard2.0/ru-RU/JavaScriptEngineSwitcher.Core.resources.dll": {
-            "locale": "ru-RU"
-          }
-        }
-      },
-      "JavaScriptEngineSwitcher.Jurassic/3.19.0": {
-        "type": "package",
-        "dependencies": {
-          "JavaScriptEngineSwitcher.Core": "3.19.0",
-          "Jurassic.Unofficial": "2022.4.30"
-        },
-        "compile": {
-          "lib/netstandard2.0/JavaScriptEngineSwitcher.Jurassic.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/JavaScriptEngineSwitcher.Jurassic.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Jurassic.Unofficial/2022.4.30": {
+    "net6.0-windows7.0/win10-x86": {
+      "Jurassic/3.2.6": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -525,104 +422,31 @@
           }
         }
       },
-      "VideoLibrary/3.2.1": {
+      "VideoLibrary/3.2.2": {
         "type": "package",
         "dependencies": {
-          "JavaScriptEngineSwitcher.Core": "3.19.0",
-          "JavaScriptEngineSwitcher.Jurassic": "3.19.0",
+          "Jurassic": "3.2.6",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
-          "lib/netstandard2.1/libvideo.dll": {}
+          "lib/netstandard2.0/libvideo.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/libvideo.dll": {}
+          "lib/netstandard2.0/libvideo.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "AdvancedStringBuilder/0.1.0": {
-      "sha512": "IbN3r5whlJvi8MhCDPVpIb+NVScyUcKSdcJZrnoXFDyzPDISl3AbWouNBYIHRdZdfGuzqCQEhM1vkxbIKqQVaQ==",
+    "Jurassic/3.2.6": {
+      "sha512": "1UOQ8got1UW63iXQ99cpo9UzjjsBEsIdOna2DbcGrZmEdJY3PELsOYv7hLUIPKVqkTDVKEKnRBGKMphQNUTD8w==",
       "type": "package",
-      "path": "advancedstringbuilder/0.1.0",
+      "path": "jurassic/3.2.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "advancedstringbuilder.0.1.0.nupkg.sha512",
-        "advancedstringbuilder.nuspec",
-        "lib/net40-client/AdvancedStringBuilder.dll",
-        "lib/net40-client/AdvancedStringBuilder.xml",
-        "lib/net45/AdvancedStringBuilder.dll",
-        "lib/net45/AdvancedStringBuilder.xml",
-        "lib/netstandard1.0/AdvancedStringBuilder.dll",
-        "lib/netstandard1.0/AdvancedStringBuilder.xml",
-        "lib/netstandard2.0/AdvancedStringBuilder.dll",
-        "lib/netstandard2.0/AdvancedStringBuilder.xml"
-      ]
-    },
-    "JavaScriptEngineSwitcher.Core/3.19.0": {
-      "sha512": "cFZG0+8OzRP7xDgmJpVwAA9V04Y3uWlAyjP+wx801crLfZr/nw1ohJtH8kBK+m9CIUHfyR1iw2b2F8q6WW2O4w==",
-      "type": "package",
-      "path": "javascriptengineswitcher.core/3.19.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "advanced-string-builder-license.txt",
-        "icon.png",
-        "javascriptengineswitcher.core.3.19.0.nupkg.sha512",
-        "javascriptengineswitcher.core.nuspec",
-        "lib/net40-client/JavaScriptEngineSwitcher.Core.dll",
-        "lib/net40-client/JavaScriptEngineSwitcher.Core.xml",
-        "lib/net40-client/ru-RU/JavaScriptEngineSwitcher.Core.resources.dll",
-        "lib/net45/JavaScriptEngineSwitcher.Core.dll",
-        "lib/net45/JavaScriptEngineSwitcher.Core.xml",
-        "lib/net45/ru-RU/JavaScriptEngineSwitcher.Core.resources.dll",
-        "lib/netstandard1.3/JavaScriptEngineSwitcher.Core.dll",
-        "lib/netstandard1.3/JavaScriptEngineSwitcher.Core.xml",
-        "lib/netstandard1.3/ru-RU/JavaScriptEngineSwitcher.Core.resources.dll",
-        "lib/netstandard2.0/JavaScriptEngineSwitcher.Core.dll",
-        "lib/netstandard2.0/JavaScriptEngineSwitcher.Core.xml",
-        "lib/netstandard2.0/ru-RU/JavaScriptEngineSwitcher.Core.resources.dll",
-        "readme.txt"
-      ]
-    },
-    "JavaScriptEngineSwitcher.Jurassic/3.19.0": {
-      "sha512": "te/WfTF+TTjunSlbmOZgo1NBPjBOECLA+8gUtu3AfuCsjGtYyPbhu6h5YeUEXN6uHGrM/4oQRushfG0BjZmwtg==",
-      "type": "package",
-      "path": "javascriptengineswitcher.jurassic/3.19.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "icon.png",
-        "javascriptengineswitcher.jurassic.3.19.0.nupkg.sha512",
-        "javascriptengineswitcher.jurassic.nuspec",
-        "jurassic-license.txt",
-        "lib/net40-client/JavaScriptEngineSwitcher.Jurassic.dll",
-        "lib/net40-client/JavaScriptEngineSwitcher.Jurassic.xml",
-        "lib/net45/JavaScriptEngineSwitcher.Jurassic.dll",
-        "lib/net45/JavaScriptEngineSwitcher.Jurassic.xml",
-        "lib/netstandard2.0/JavaScriptEngineSwitcher.Jurassic.dll",
-        "lib/netstandard2.0/JavaScriptEngineSwitcher.Jurassic.xml",
-        "readme.txt"
-      ]
-    },
-    "Jurassic.Unofficial/2022.4.30": {
-      "sha512": "O3lz1UvUf7p2IzJC/G++XE4l3+vJN2fyYQZCtk5/sOVfy3NmDKwgs4Gp+caHh/mBqTzVi8R+bOF6gvq6KLcBqg==",
-      "type": "package",
-      "path": "jurassic.unofficial/2022.4.30",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "jurassic.unofficial.2022.4.30.nupkg.sha512",
-        "jurassic.unofficial.nuspec",
-        "lib/net40-client/Jurassic.dll",
-        "lib/net40-client/Jurassic.xml",
-        "lib/net45/Jurassic.dll",
-        "lib/net45/Jurassic.xml",
+        "jurassic.3.2.6.nupkg.sha512",
+        "jurassic.nuspec",
         "lib/netstandard2.0/Jurassic.dll",
         "lib/netstandard2.0/Jurassic.xml"
       ]
@@ -1413,25 +1237,25 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "VideoLibrary/3.2.1": {
-      "sha512": "r+SFrMHnIzL6i3WhE5hlUeK0rWUz4YadT1v7TRLfvaDzZq87NILHlf9uYJj/YWBryW/BCZJ34jzyeaCeLK3Apg==",
+    "VideoLibrary/3.2.2": {
+      "sha512": "hvOZ74qcTVqUt4CXc3q2nHCweRZFgJFBEnTj4HE9tNvAhG1j0EqFfldk8l4a8HHMtAxGBzZfF5FqJpfvZKyqIQ==",
       "type": "package",
-      "path": "videolibrary/3.2.1",
+      "path": "videolibrary/3.2.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "README.md",
         "icon_586.png",
-        "lib/netstandard2.1/libvideo.dll",
-        "videolibrary.3.2.1.nupkg.sha512",
+        "lib/netstandard2.0/libvideo.dll",
+        "videolibrary.3.2.2.nupkg.sha512",
         "videolibrary.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "VideoLibrary >= 3.2.1"
+    "net6.0-windows7.0": [
+      "VideoLibrary >= 3.2.2"
     ]
   },
   "packageFolders": {
@@ -1440,9 +1264,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Documentos\\VSCode\\ytnet\\ytNet.csproj",
-      "projectName": "ytNet",
-      "projectPath": "E:\\Documentos\\VSCode\\ytnet\\ytNet.csproj",
+      "projectUniqueName": "E:\\Documentos\\VSCode\\ytnet\\ytnet.csproj",
+      "projectName": "ytnet",
+      "projectPath": "E:\\Documentos\\VSCode\\ytnet\\ytnet.csproj",
       "packagesPath": "C:\\Users\\thiag\\.nuget\\packages\\",
       "outputPath": "E:\\Documentos\\VSCode\\ytnet\\obj\\",
       "projectStyle": "PackageReference",
@@ -1450,14 +1274,14 @@
         "C:\\Users\\thiag\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net6.0-windows"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
           "projectReferences": {}
         }
       },
@@ -1468,12 +1292,12 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
         "dependencies": {
           "VideoLibrary": {
             "target": "Package",
-            "version": "[3.2.1, )"
+            "version": "[3.2.2, )"
           }
         },
         "imports": [
@@ -1504,6 +1328,9 @@
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"

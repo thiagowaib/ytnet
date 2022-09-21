@@ -6,51 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "ytNet/1.0.0": {
+      "ytnet/1.0.0": {
         "dependencies": {
-          "VideoLibrary": "3.2.1"
+          "VideoLibrary": "3.2.2"
         },
         "runtime": {
-          "ytNet.dll": {}
+          "ytnet.dll": {}
         }
       },
-      "AdvancedStringBuilder/0.1.0": {
-        "runtime": {
-          "lib/netstandard2.0/AdvancedStringBuilder.dll": {
-            "assemblyVersion": "0.1.0.0",
-            "fileVersion": "0.1.0.0"
-          }
-        }
-      },
-      "JavaScriptEngineSwitcher.Core/3.19.0": {
-        "dependencies": {
-          "AdvancedStringBuilder": "0.1.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/JavaScriptEngineSwitcher.Core.dll": {
-            "assemblyVersion": "3.19.0.0",
-            "fileVersion": "3.19.0.0"
-          }
-        },
-        "resources": {
-          "lib/netstandard2.0/ru-RU/JavaScriptEngineSwitcher.Core.resources.dll": {
-            "locale": "ru-RU"
-          }
-        }
-      },
-      "JavaScriptEngineSwitcher.Jurassic/3.19.0": {
-        "dependencies": {
-          "JavaScriptEngineSwitcher.Core": "3.19.0",
-          "Jurassic.Unofficial": "2022.4.30"
-        },
-        "runtime": {
-          "lib/netstandard2.0/JavaScriptEngineSwitcher.Jurassic.dll": {
-            "assemblyVersion": "3.19.0.0",
-            "fileVersion": "3.19.0.0"
-          }
-        }
-      },
-      "Jurassic.Unofficial/2022.4.30": {
+      "Jurassic/3.2.6": {
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
         },
@@ -131,54 +95,32 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "VideoLibrary/3.2.1": {
+      "VideoLibrary/3.2.2": {
         "dependencies": {
-          "JavaScriptEngineSwitcher.Core": "3.19.0",
-          "JavaScriptEngineSwitcher.Jurassic": "3.19.0",
+          "Jurassic": "3.2.6",
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
-          "lib/netstandard2.1/libvideo.dll": {
-            "assemblyVersion": "3.2.1.0",
-            "fileVersion": "3.2.1.0"
+          "lib/netstandard2.0/libvideo.dll": {
+            "assemblyVersion": "3.2.2.0",
+            "fileVersion": "3.2.2.0"
           }
         }
       }
     }
   },
   "libraries": {
-    "ytNet/1.0.0": {
+    "ytnet/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "AdvancedStringBuilder/0.1.0": {
+    "Jurassic/3.2.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IbN3r5whlJvi8MhCDPVpIb+NVScyUcKSdcJZrnoXFDyzPDISl3AbWouNBYIHRdZdfGuzqCQEhM1vkxbIKqQVaQ==",
-      "path": "advancedstringbuilder/0.1.0",
-      "hashPath": "advancedstringbuilder.0.1.0.nupkg.sha512"
-    },
-    "JavaScriptEngineSwitcher.Core/3.19.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-cFZG0+8OzRP7xDgmJpVwAA9V04Y3uWlAyjP+wx801crLfZr/nw1ohJtH8kBK+m9CIUHfyR1iw2b2F8q6WW2O4w==",
-      "path": "javascriptengineswitcher.core/3.19.0",
-      "hashPath": "javascriptengineswitcher.core.3.19.0.nupkg.sha512"
-    },
-    "JavaScriptEngineSwitcher.Jurassic/3.19.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-te/WfTF+TTjunSlbmOZgo1NBPjBOECLA+8gUtu3AfuCsjGtYyPbhu6h5YeUEXN6uHGrM/4oQRushfG0BjZmwtg==",
-      "path": "javascriptengineswitcher.jurassic/3.19.0",
-      "hashPath": "javascriptengineswitcher.jurassic.3.19.0.nupkg.sha512"
-    },
-    "Jurassic.Unofficial/2022.4.30": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-O3lz1UvUf7p2IzJC/G++XE4l3+vJN2fyYQZCtk5/sOVfy3NmDKwgs4Gp+caHh/mBqTzVi8R+bOF6gvq6KLcBqg==",
-      "path": "jurassic.unofficial/2022.4.30",
-      "hashPath": "jurassic.unofficial.2022.4.30.nupkg.sha512"
+      "sha512": "sha512-1UOQ8got1UW63iXQ99cpo9UzjjsBEsIdOna2DbcGrZmEdJY3PELsOYv7hLUIPKVqkTDVKEKnRBGKMphQNUTD8w==",
+      "path": "jurassic/3.2.6",
+      "hashPath": "jurassic.3.2.6.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -257,12 +199,12 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "VideoLibrary/3.2.1": {
+    "VideoLibrary/3.2.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-r+SFrMHnIzL6i3WhE5hlUeK0rWUz4YadT1v7TRLfvaDzZq87NILHlf9uYJj/YWBryW/BCZJ34jzyeaCeLK3Apg==",
-      "path": "videolibrary/3.2.1",
-      "hashPath": "videolibrary.3.2.1.nupkg.sha512"
+      "sha512": "sha512-hvOZ74qcTVqUt4CXc3q2nHCweRZFgJFBEnTj4HE9tNvAhG1j0EqFfldk8l4a8HHMtAxGBzZfF5FqJpfvZKyqIQ==",
+      "path": "videolibrary/3.2.2",
+      "hashPath": "videolibrary.3.2.2.nupkg.sha512"
     }
   }
 }
