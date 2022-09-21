@@ -7,6 +7,9 @@ partial class YtNetForm
     /// </summary>
     private System.ComponentModel.IContainer components = null;
 
+    // * Test Button Declaration
+    private System.Windows.Forms.Button TestButton { get; set; }
+
     /// <summary>
     ///  Clean up any resources being used.
     /// </summary>
@@ -32,6 +35,28 @@ partial class YtNetForm
         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         this.ClientSize = new System.Drawing.Size(800, 450);
         this.Text = "YtNet - Youtube Downloader";
+
+        // * Test Button Instatiating
+        this.TestButton = new System.Windows.Forms.Button();
+
+        // * Test Button Property Change
+        this.TestButton.Text = "Test Me";
+
+        // * Test Button Event Handler assign
+        this.TestButton.Click += new System.EventHandler(TestButton_Click);
+
+        // * Add button to the Control ControlCollection
+        this.Controls.Add(this.TestButton);
+    }
+
+    // * Test Button Event Handler
+    private void TestButton_Click(object sender, System.EventArgs e)
+    {
+        if(this.TestButton.BackColor == Color.FromArgb(255, 0, 0))
+            this.TestButton.BackColor = Color.FromArgb(255, 255, 255);
+        else
+            this.TestButton.BackColor = Color.FromArgb(255, 0, 0);
+
     }
 
     #endregion
