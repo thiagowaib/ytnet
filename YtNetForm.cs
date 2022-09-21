@@ -1,8 +1,8 @@
 namespace ytnet;
 
-public partial class Form1 : Form
+public partial class YtNetForm : Form
 {
-    public Form1()
+    public YtNetForm()
     {
         InitializeComponent();
     }
